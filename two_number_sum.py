@@ -13,7 +13,7 @@ def twoNumberSum(array, targetSum):
 					return [array[index], array[i]]
 				else:
 					return [array[i], array[index]]
-		for j in range(index, endIndex + 1):
+		for j in range(index + 1, endIndex + 1):
 			if array[index] + array[j] == targetSum:
 				if array[index] < array[j]:
 					return [array[index], array[j]]
